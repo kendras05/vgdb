@@ -5,3 +5,21 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require 'faker'
+
+
+100.times do |i|
+
+
+title = Faker::Game.unique.title
+release_date = Faker::Time.backward(days: 1000, period: :evening)
+rating = Random.rand(0...10)
+console= Faker::Game.platform
+
+
+#INSERT INTO Game (title, release_date, rating, console) VALUES ('#{title}', '#{release_date}', '#{ratign}','#{console}');
+
+end
+
+
