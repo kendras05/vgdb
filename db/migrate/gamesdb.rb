@@ -1,6 +1,5 @@
 class CreateGames < ActiveRecord::Migration[6.0]
-  def change
-    create_table :games do |t|
+    create_table :game do |t|
       t.string :title
       t.timestamp :release_date
       t.float :rating
@@ -8,5 +7,4 @@ class CreateGames < ActiveRecord::Migration[6.0]
 
       t.timestamps
     end
-  end
 end

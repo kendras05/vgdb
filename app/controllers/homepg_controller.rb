@@ -1,6 +1,8 @@
 class HomepgController < ApplicationController
 
-  def index
-    @vgames = Game.all 
-  end 
+    def index
+    @games = Game.all.order(id: :desc)
+    end
+
+
 end
