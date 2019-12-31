@@ -18,7 +18,11 @@ rating = Random.rand(0...10)
 console= Faker::Game.platform
 
 
-#INSERT INTO Game (title, release_date, rating, console) VALUES ('#{title}', '#{release_date}', '#{ratign}','#{console}');
+#vgames = INSERT INTO Game (title, release_date, rating, console) VALUES ('#{title}', '#{release_date}', '#{ratign}','#{console}');
+
+vgames = Game.create({title:'#{title}', release_date:'#{release_date}', rating:'#{rating}', console:'#{console}')
+
+vgames.save
 
 end
 
