@@ -20,7 +20,9 @@ console= Faker::Game.platform
 
 #vgames = INSERT INTO Game (title, release_date, rating, console) VALUES ('#{title}', '#{release_date}', '#{ratign}','#{console}');
 
-vgames =Game.create({title:'#{title}', release_date:'#{release_date}', rating:'#{rating}', console:'#{console}'})
+#vgames = Game.create({title:"#{title}", release_date:"#{release_date}", rating:"#{rating}", console:"#{console}"})
+
+vgames = Game.create({ title: title, release_date: release_date, rating: rating, console: console})
 
 vgames.save
 
