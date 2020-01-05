@@ -1,8 +1,5 @@
 class HomepgController < ApplicationController
 
     def index
-    @games = Game.all.order(id: :desc)
+      @games = Game.limit(10).order(id: :desc)
     end
-
-
-end
