@@ -1,8 +1,8 @@
-<h1>100 Best Video Games Ever</h1>
+<h1 style="background-color:DodgerBlue;color:White;border:2px solid Red;">100 Best Video Games Ever</h1>
 
-
+<h3>Here's the top 10!!!</h3>
 <% @games.each do |game| %>
-  <p>
+  <p style="color:DodgerBlue; border:2px solid Violet;" >
   <%= game.title %>
   <%= game.release_date %>
   <%= game.rating %>
@@ -10,5 +10,7 @@
   </p>
 <% end %>
 
-
-
+<body>
+  
+<%= link_to 'Here is all 100!', secpg_path(@games) %>
+</body>
